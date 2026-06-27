@@ -4,7 +4,7 @@ import requests
 st.title("MNIST Digit Classifier")
 st.write("Upload a digit image (0-9) and the model will predict it.")
 
-BACKEND_URL = "https://huggingface.co/spaces/hacker-ai/MNIST"
+BACKEND_URL = "https://hacker-ai-mnist.hf.space/predict"
 
 uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
 
