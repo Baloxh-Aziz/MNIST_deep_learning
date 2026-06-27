@@ -4,8 +4,7 @@ import requests
 st.title("MNIST Digit Classifier")
 st.write("Upload a digit image (0-9) and the model will predict it.")
 
-# 👇 Apna backend Space ka URL yahan daalo (deploy hone ke baad)
-BACKEND_URL = "https://<your-username>-mnist-backend.hf.space/predict"
+BACKEND_URL = "https://huggingface.co/spaces/hacker-ai/MNIST"
 
 uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
 
