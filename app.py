@@ -14,15 +14,16 @@ tab1, tab2 = st.tabs(["✏️ Draw a Digit", "📁 Upload Image"])
 with tab1:
     st.write("Draw a digit on the blackboard:")
     canvas_result = st_canvas(
-        fill_color="black",
-        stroke_width=20,
-        stroke_color="white",
-        background_color="black",
-        height=300,
-        width=300,
-        drawing_mode="freedraw",
-        key="canvas",
-    )
+    fill_color="black",
+    stroke_width=20,
+    stroke_color="white",
+    background_color="black",
+    height=300,
+    width=300,
+    drawing_mode="freedraw",
+    key="canvas",
+    return_image_data=True,  
+)
 
     if st.button("🔍 Predict Drawing"):
         if canvas_result.image_data is not None and np.sum(canvas_result.image_data) > 0:
