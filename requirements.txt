@@ -3,4 +3,3 @@ requests
 numpy
 pillow
 streamlit-drawable-canvas
-tensorflow
